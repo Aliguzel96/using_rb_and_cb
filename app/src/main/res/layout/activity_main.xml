@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg4">
+
+    <RadioGroup
+        android:id="@+id/r_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_btn"
+            android:text="RadioButton ile Dil Seçiniz"
+            android:layout_marginTop="10dp"
+
+            ></TextView>
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="Java"
+            android:layout_marginLeft="15dp"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="Kotlin"
+            android:layout_marginLeft="15dp"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="Flutter"
+            android:layout_marginLeft="15dp"></RadioButton>
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Uygula"
+            android:textSize="25sp"></Button>
+
+        <TextView
+            android:id="@+id/secilen_metin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="Seçiminiz: "
+            android:textSize="20sp"></TextView>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/cktext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/r_group"
+        android:text="CheckBox ile dil seçiniz"
+        android:textSize="15sp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="12dp">
+
+    </TextView>
+
+    <CheckBox
+        android:id="@+id/cb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Java"
+        android:textSize="15sp"
+        android:layout_below="@id/cktext1"
+        android:layout_toRightOf="@+id/r_group"
+        android:layout_marginLeft="50dp"></CheckBox>
+    <CheckBox
+        android:id="@+id/cb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kotlin"
+        android:textSize="15sp"
+        android:layout_below="@id/cb1"
+        android:layout_toRightOf="@+id/r_group"
+        android:layout_marginLeft="50dp"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/cb3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flutter"
+        android:textSize="15sp"
+        android:layout_below="@id/cb2"
+        android:layout_toRightOf="@+id/r_group"
+        android:layout_marginLeft="50dp"
+        android:checked="true"></CheckBox>
+
+    <Button
+        android:id="@+id/btn_ck"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb3"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_toRightOf="@+id/r_group"
+        android:text="Seç"
+        android:textSize="25sp">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/txt_ck2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_ck"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:layout_toRightOf="@+id/r_group"
+        android:text="Seçilen Dil:">
+
+    </TextView>
+
+
+</RelativeLayout>
